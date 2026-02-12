@@ -4,10 +4,10 @@ import Link from 'next/link';
 import { entities } from '@/lib/data';
 
 const teamMembers = [
-    { name: 'Saud Farooqui', role: 'Managing Director', image: '/team-members/saud-farooqui.jpeg' },
-    { name: 'Muneeb Ahmed', role: 'MD CN Apparels', image: '/team-members/muneeb-ahmed.jpeg' },
-    { name: 'Owais Siddiqui', role: 'MD CN Packaging', image: '/team-members/owais-siddiqui.jpeg' },
-    { name: 'Muhammad Huzaifa', role: 'HOD of CN IT Solutions', image: '/team-members/muhammad-huzaifa.png' },
+    { name: 'Saud Farooqui', role: 'Managing Director', image: '/team-members/saud-farooqui.webp' },
+    { name: 'Muneeb Ahmed', role: 'MD CN Apparels', image: '/team-members/muneeb-ahmed.webp' },
+    { name: 'Owais Siddiqui', role: 'MD CN Packaging', image: '/team-members/owais-siddiqui.webp' },
+    { name: 'Muhammad Huzaifa', role: 'HOD of CN IT Solutions', image: '/team-members/muhammad-huzaifa.webp' },
 ];
 
 const talentedTeam = [
