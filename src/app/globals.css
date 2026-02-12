@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #0d1b2a;
+
+  /* Brand Colors */
+  --brand-teal: #3abfad;
+  --brand-navy: #12233b;
+  --brand-navy-light: #1b2e4b;
+
+  --primary: var(--brand-teal);
+  --secondary: var(--brand-navy);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--brand-teal);
+  --color-secondary: var(--brand-navy);
+  --color-navy: var(--brand-navy);
+  --color-teal: var(--brand-teal);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer base {
+
+  button,
+  a,
+  [role="button"],
+  select,
+  area {
+    cursor: pointer;
+  }
+}
+
+.bg-glass {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  @keyframes progress {
+    from {
+      transform: scaleX(0);
+    }
+
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+  .animate-progress {
+    transform-origin: left;
+    animation: progress linear;
+    animation-timeline: scroll();
+  }
+}
