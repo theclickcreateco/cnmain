@@ -40,4 +40,5 @@ jobs:
             **/.git*/**
             **/node_modules/**
             .next/cache/**
+            public/products/**
           dangerously-allow-empty-delete-local-dir: true
