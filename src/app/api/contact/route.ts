@@ -14,7 +14,6 @@ export async function POST(request: Request) {
         }
 
         // Configure SMTP transporter
-        // These should be set in your Hostinger environment variables or a .env file
         const transporter = nodemailer.createTransport({
             host: process.env.SMTP_HOST || 'smtp.hostinger.com',
             port: Number(process.env.SMTP_PORT) || 465,
@@ -58,7 +57,9 @@ export async function POST(request: Request) {
         console.error('Nodemailer error:', error);
         return NextResponse.json(
             {
-                message: 'Oops! Something went wrong and we couldn't send your message.', error: error.message },
+                message: "Oops! Something went wrong and we could not send your message.",
+                error: error.message
+            },
             { status: 500 }
         );
     }
