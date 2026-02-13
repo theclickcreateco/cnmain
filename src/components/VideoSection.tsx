@@ -30,6 +30,7 @@ export default function VideoSection() {
                             loop
                             muted
                             playsInline
+                            preload="none"
                         />
                     </div>
                     <div className="absolute inset-0 bg-navy/20 group-hover:bg-navy/10 transition-colors flex items-center justify-center">

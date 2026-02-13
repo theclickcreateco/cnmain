@@ -43,6 +43,7 @@ export default function HeroCarousel() {
                         fill
                         className="object-cover"
                         priority
+                        sizes="100vw"
                     />
                 </motion.div>
             </AnimatePresence>
