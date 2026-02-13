@@ -5883,17 +5883,17 @@ export const products = [
 export const entities = [
   {
     name: "CN Apparel",
-    href: "https://cn-apparel.com",
+    href: "https://cn-apparels.com",
     color: "bg-blue-600",
   },
   {
     name: "CN Fragrance",
-    href: "https://cnfragrance.com",
+    href: "https://cnfragrances.com",
     color: "bg-purple-600",
   },
   {
     name: "CN Packages",
-    href: "https://cnpackages.com/",
+    href: "https://cnpackages.com",
     color: "bg-yellow-600",
   },
   {
