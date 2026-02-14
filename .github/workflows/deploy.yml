@@ -30,15 +30,10 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          # Since we removed output: 'export', we should deploy the entire project or use a different action for Node apps.
-          # However, for Hostinger Node.js hosting, you typically upload the whole project (excluding node_modules).
-          # If you are using a static site but want API routes, you need Node.js hosting.
-          local-dir: ./
+          local-dir: ./out/
           server-dir: public_html/
           exclude: |
             **/.git*
             **/.git*/**
             **/node_modules/**
-            .next/cache/**
-            public/products/**
           dangerously-allow-empty-delete-local-dir: true
