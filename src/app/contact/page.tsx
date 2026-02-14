@@ -18,7 +18,7 @@ export default function ContactPage() {
         setStatus('loading');
 
         try {
-            const response = await fetch('/api/contact', {
+            const response = await fetch('/api/contact.php', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData)
