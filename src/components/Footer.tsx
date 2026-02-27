@@ -214,6 +214,11 @@ export default function Footer() {
           </Link>
         </div>
       </div>
+      <div className="flex mx-auto items-center justify-center mt-4 text-[10px] text-white/30">
+        <p>
+        Proudly Created By CINORIUM | CN IT Solutions
+        </p>
+      </div>
     </footer>
   );
 }
