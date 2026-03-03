@@ -7,7 +7,7 @@ const teamMembers = [
     { name: 'Saud Farooqui', role: 'Managing Director', image: '/team-members/saud-farooqui.webp' },
     { name: 'Muneeb Ahmed', role: 'MD CN Apparels', image: '/team-members/muneeb-ahmed.webp' },
     { name: 'Owais Siddiqui', role: 'MD CN Packaging', image: '/team-members/owais-siddiqui.webp' },
-    { name: 'Muhammad Huzaifa', role: 'HOD of CN IT Solutions', image: '/team-members/muhammad-huzaifa.webp' },
+    { name: 'Muhammad Huzaifa', role: 'HOD CN IT Solutions', image: '/team-members/muhammad-huzaifa.webp' },
 ];
 
 const talentedTeam = [
