@@ -5,16 +5,22 @@ import { entities } from '@/lib/data';
 
 const teamMembers = [
     { name: 'Saud Farooqui', role: 'Managing Director', image: '/team-members/saud-farooqui.webp' },
-    { name: 'Muneeb Ahmed', role: 'MD CN Apparels', image: '/team-members/muneeb-ahmed.webp' },
+    { name: 'Muneeb Ahmed', role: 'MD CN Apparels', image: '/team-members/muneeb-ahmed.png' },
     { name: 'Owais Siddiqui', role: 'MD CN Packaging', image: '/team-members/owais-siddiqui.webp' },
-    { name: 'Muhammad Huzaifa', role: 'HOD CN IT Solutions', image: '/team-members/muhammad-huzaifa.webp' },
+    { name: 'Muhammad Huzaifa', role: 'HOD of CN IT Solutions', image: '/team-members/muhammad-huzaifa.png' },
 ];
 
 const talentedTeam = [
-    { name: 'Ayesha Khan', category: 'HR', image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=800&auto=format&fit=crop' },
-    { name: 'Zubair Ahmed', category: 'Management', image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop' },
-    { name: 'Fatima Noor', category: 'Sales', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop' },
-    { name: 'Ali Raza', category: 'Creative', image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop' },
+    { name: 'Adnan', category: 'HR', image: '/team-members/adnan-cn.png' },
+    { name: 'Abdul Hadi', category: 'Management', image: '/team-members/ahadi-cn.png' },
+    { name: 'Ali', category: 'Sales', image: '/team-members/ali-cn.png' },
+    { name: 'Faisal', category: 'Creative', image: '/team-members/faisal-cn.png' },
+    { name: 'Mehmood', category: 'Creative', image: '/team-members/mehmood-cn.png' },
+    { name: 'Musarrat', category: 'Creative', image: '/team-members/musarrat-cn.png' },
+    { name: 'Tanveer', category: 'Creative', image: '/team-members/tanveer-cn.png' },
+    { name: 'Team CN', category: 'Creative', image: '/team-members/team-cn.png' },
+    { name: 'Usama', category: 'Creative', image: '/team-members/usama-cn.png' },
+    { name: 'Waqas', category: 'Creative', image: '/team-members/waqas-cn.png' },
 ];
 
 export default function AboutPage() {
@@ -129,23 +135,27 @@ export default function AboutPage() {
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {talentedTeam.map((member, i) => (
-                            <div key={i} className="group relative overflow-hidden rounded-[40px] aspect-[4/5]">
-                                <img
-                                    src={member.image}
-                                    alt={member.name}
-                                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/20 to-transparent p-8 flex flex-col justify-end">
-                                    <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                                        <span className="inline-block px-3 py-1 bg-teal text-white text-[10px] font-bold uppercase tracking-widest rounded-full mb-3">
+                        {talentedTeam.map((member, i) => {
+                            const backgrounds = ['bg-[#f0f9ff]', 'bg-[#f0fdfa]', 'bg-[#f8fafc]'];
+                            const bgColor = backgrounds[i % backgrounds.length];
+                            return (
+                                <div key={i} className="group p-3 bg-white border border-navy/5 rounded-[40px] hover:shadow-2xl transition-all duration-500 flex flex-col aspect-[4/5]">
+                                    <div className={`relative flex-1 ${bgColor} rounded-[32px] flex items-center justify-center p-8 overflow-hidden`}>
+                                        <img
+                                            src={member.image}
+                                            alt={member.name}
+                                            className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700"
+                                        />
+                                    </div>
+                                    <div className="p-6 text-center">
+                                        <span className="inline-block px-3 py-1 bg-teal/10 text-teal text-[10px] font-bold uppercase tracking-widest rounded-full mb-3">
                                             {member.category}
                                         </span>
-                                        <h3 className="text-2xl font-bold text-white">{member.name}</h3>
+                                        <h3 className="text-xl font-bold text-navy">{member.name}</h3>
                                     </div>
                                 </div>
-                            </div>
-                        ))}
+                            );
+                        })}
                     </div>
                 </div>
 
