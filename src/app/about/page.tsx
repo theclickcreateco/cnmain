@@ -3,25 +3,53 @@ import { Target, Users, Award, ShieldCheck, Briefcase, Globe, Phone } from 'luci
 import Link from 'next/link';
 import { entities } from '@/lib/data';
 
+const managingDirector = {
+    name: 'Saud Farooqui',
+    role: 'Managing Director',
+    image: '/team-members/saud-farooqui.webp'
+};
+
 const teamMembers = [
-    { name: 'Saud Farooqui', role: 'Managing Director', image: '/team-members/saud-farooqui.webp' },
-    { name: 'Muneeb Ahmed', role: 'MD CN Apparels', image: '/team-members/muneeb-ahmed.png' },
-    { name: 'Owais Siddiqui', role: 'MD CN Packaging', image: '/team-members/owais-siddiqui.webp' },
-    { name: 'Muhammad Huzaifa', role: 'HOD of CN IT Solutions', image: '/team-members/muhammad-huzaifa.png' },
+    { name: 'Muneeb Ahmed', role: 'Managing Partner', image: '/team-members/muneeb-ahmed.webp' },
+    { name: 'Owais Siddiqui', role: 'Managing Partner', image: '/team-members/owais-siddiqui.webp' },
+    { name: 'Kashif Feroz', role: 'Managing Partner', image: '/team-members/owais-siddiqui.webp' },
+    { name: 'Muhammad Huzaifa', role: 'Managing Partner IT', image: '/team-members/muhammad-huzaifa.webp' },
 ];
 
-const talentedTeam = [
-    { name: 'Adnan', category: 'HR', image: '/team-members/adnan-cn.png' },
-    { name: 'Abdul Hadi', category: 'Management', image: '/team-members/ahadi-cn.png' },
-    { name: 'Ali', category: 'Sales', image: '/team-members/ali-cn.png' },
-    { name: 'Faisal', category: 'Creative', image: '/team-members/faisal-cn.png' },
-    { name: 'Mehmood', category: 'Creative', image: '/team-members/mehmood-cn.png' },
-    { name: 'Musarrat', category: 'Creative', image: '/team-members/musarrat-cn.png' },
-    { name: 'Tanveer', category: 'Creative', image: '/team-members/tanveer-cn.png' },
-    { name: 'Team CN', category: 'Creative', image: '/team-members/team-cn.png' },
-    { name: 'Usama', category: 'Creative', image: '/team-members/usama-cn.png' },
-    { name: 'Waqas', category: 'Creative', image: '/team-members/waqas-cn.png' },
+const marketSales = [
+    { name: 'Adnan', category: 'GM Marketing & Sales', image: '/team-members/adnan-cn.png' },
+    { name: 'Faraz Jafri', category: 'Manager Merchandiser', image: '/team-members/adnan-cn.png' },
+    { name: 'Waqas Jafri', category: 'Manager Operations', image: '/team-members/waqas-cn.png' },
+    { name: 'Osama Ahmed', category: 'Sales Executive', image: '/team-members/usama-cn.png' },
+    { name: 'Tanveer Shah', category: 'Sales Executive', image: '/team-members/tanveer-cn.png' },
+    { name: 'Haris Ahmed', category: 'Sales Executive', image: '/team-members/tanveer-cn.png' },
+    { name: 'Ibrahim Sultan', category: 'Asst. Merchandiser', image: '/team-members/ahadi-cn.png' },
+    { name: 'Arham Ahmed Siddiqui', category: 'Asst. Merchandiser', image: '/team-members/arham-cn.png' },
+    { name: 'Muhamamd Ali Siddiqui', category: 'Asst. Merchandiser', image: '/team-members/ali-cn.png' },
+    { name: 'Abdul Hadi', category: 'Asst. Merchandiser', image: '/team-members/ahadi-cn.png' },
 ];
+
+const adminTeam = [
+    { name: 'S.M.Faisal Farooqui', category: 'Director Admin / HR', image: '/team-members/faisal-cn.png' },
+    { name: 'Mehmood Khan', category: 'Manager Accounts', image: '/team-members/mehmood-cn.png' },
+];
+
+const TeamCard = ({ name, role, image }: { name: string, role?: string, image: string }) => (
+    <div className="group relative flex flex-col bg-white rounded-[24px] p-2 border border-navy/5 hover:border-teal/20 hover:bg-teal/5 shadow-sm hover:shadow-2xl transition-all duration-500 h-full">
+        <div className="relative aspect-[3/4] rounded-[20px] overflow-hidden mb-4 bg-navy/5">
+            <img
+                src={image}
+                alt={name}
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
+            />
+            <div className="absolute inset-0 ring-1 ring-inset ring-black/5 rounded-[20px]"></div>
+        </div>
+        <div className="text-center px-2 pb-2 flex-1 flex flex-col justify-end">
+            <h3 className="text-[15px] leading-tight font-bold text-navy tracking-wide mb-1 opacity-90">{name}</h3>
+            <p className="text-[11px] text-teal font-semibold tracking-wider uppercase">{role}</p>
+        </div>
+    </div>
+);
 
 export default function AboutPage() {
     return (
@@ -96,66 +124,61 @@ export default function AboutPage() {
             </section>
 
             {/* Team Section */}
-            <section className="max-w-7xl mx-auto px-4 py-24">
-                <div className="text-center mb-16 space-y-4">
-                    <h2 className="text-4xl font-bold text-navy">Our Dedicated team</h2>
-                    <p className="text-navy/60 max-w-2xl mx-auto text-lg leading-relaxed">
-                        Our approach thrives at the intersection between data-driven market research and traditional management consultancies.
+            <section className="max-w-[90rem] mx-auto px-4 py-24 space-y-32">
+                <div className="text-center space-y-4 max-w-2xl mx-auto">
+                    <h2 className="text-4xl md:text-5xl font-bold text-navy tracking-tight">Our Dedicated Team</h2>
+                    <p className="text-navy/60 text-lg leading-relaxed">
+                        The creative minds and strategic thinkers driving our daily operations and customer success.
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    {teamMembers.map((member, i) => (
-                        <div key={i} className="group p-2 bg-white border border-navy/5 rounded-[32px] hover:shadow-2xl transition-all duration-500">
-                            <div className="relative aspect-square rounded-[28px] overflow-hidden mb-6">
-                                <img
-                                    src={member.image}
-                                    alt={member.name}
-                                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-8 flex flex-col justify-end">
-                                    <p className="text-white/80 text-sm font-medium">{member.role}</p>
-                                </div>
-                            </div>
-                            <div className="text-center pb-6">
-                                <h3 className="text-xl font-bold text-navy mb-1">{member.name}</h3>
-                                <p className="text-navy/40 font-medium">{member.role}</p>
-                            </div>
+                {/* Managing Director */}
+                <div className="space-y-12">
+                    <div className="text-center">
+                        <h3 className="text-2xl font-bold text-navy/80 font-serif">Leadership</h3>
+                        <div className="w-12 h-1 bg-teal mx-auto mt-4 rounded-full"></div>
+                    </div>
+                    <div className="flex justify-center">
+                        <div className="w-full max-w-sm">
+                            <TeamCard name={managingDirector.name} role={managingDirector.role} image={managingDirector.image} />
                         </div>
-                    ))}
+                    </div>
                 </div>
 
-                {/* Our Talented Team */}
-                <div className="mt-32">
-                    <div className="text-center mb-16 space-y-4">
-                        <h2 className="text-4xl font-bold text-navy">Our Talented Team</h2>
-                        <p className="text-navy/60 max-w-2xl mx-auto text-lg leading-relaxed">
-                            The creative minds and strategic thinkers driving our daily operations and customer success.
-                        </p>
+                {/* Managing Partners */}
+                <div className="space-y-12">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                        {teamMembers.map((member, i) => (
+                            <TeamCard key={i} name={member.name} role={member.role} image={member.image} />
+                        ))}
                     </div>
+                </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {talentedTeam.map((member, i) => {
-                            const backgrounds = ['bg-[#f0f9ff]', 'bg-[#f0fdfa]', 'bg-[#f8fafc]'];
-                            const bgColor = backgrounds[i % backgrounds.length];
-                            return (
-                                <div key={i} className="group p-3 bg-white border border-navy/5 rounded-[40px] hover:shadow-2xl transition-all duration-500 flex flex-col aspect-[4/5]">
-                                    <div className={`relative flex-1 ${bgColor} rounded-[32px] flex items-center justify-center p-8 overflow-hidden`}>
-                                        <img
-                                            src={member.image}
-                                            alt={member.name}
-                                            className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700"
-                                        />
-                                    </div>
-                                    <div className="p-6 text-center">
-                                        <span className="inline-block px-3 py-1 bg-teal/10 text-teal text-[10px] font-bold uppercase tracking-widest rounded-full mb-3">
-                                            {member.category}
-                                        </span>
-                                        <h3 className="text-xl font-bold text-navy">{member.name}</h3>
-                                    </div>
-                                </div>
-                            );
-                        })}
+                {/* Marketing & Sales */}
+                <div className="space-y-12">
+                    <div className="text-center">
+                        <h3 className="text-2xl font-bold text-navy/80 font-serif">Marketing & Sales</h3>
+                        <div className="w-12 h-1 bg-teal mx-auto mt-4 rounded-full"></div>
+                    </div>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
+                        {marketSales.map((member, i) => (
+                            <TeamCard key={i} name={member.name} role={member.category} image={member.image} />
+                        ))}
+                    </div>
+                </div>
+
+                {/* Admin / HR */}
+                <div className="space-y-12">
+                    <div className="text-center">
+                        <h3 className="text-2xl font-bold text-navy/80 font-serif">Administration & HR</h3>
+                        <div className="w-12 h-1 bg-teal mx-auto mt-4 rounded-full"></div>
+                    </div>
+                    <div className="flex justify-center gap-6 flex-wrap">
+                        {adminTeam.map((member, i) => (
+                            <div key={i} className="w-full max-w-[16rem]">
+                                <TeamCard name={member.name} role={member.category} image={member.image} />
+                            </div>
+                        ))}
                     </div>
                 </div>
 
