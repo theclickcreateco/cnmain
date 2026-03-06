@@ -10,7 +10,7 @@ const managingDirector = {
 };
 
 const teamMembers = [
-    { name: 'Muneeb Ahmed', role: 'Managing Partner', image: '/team-members/muneeb-ahmed.webp' },
+    { name: 'Muneeb Ahmed', role: 'Managing Partner', image: '/team-members/muneeb-ahmed.jpeg' },
     { name: 'Owais Siddiqui', role: 'Managing Partner', image: '/team-members/owais-siddiqui.webp' },
     { name: 'Kashif Feroz', role: 'Managing Partner', image: '/team-members/owais-siddiqui.webp' },
     { name: 'Muhammad Huzaifa', role: 'Managing Partner IT', image: '/team-members/muhammad-huzaifa.webp' },
