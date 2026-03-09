@@ -10,19 +10,19 @@ const managingDirector = {
 };
 
 const teamMembers = [
-    { name: 'Muneeb Ahmed', role: 'Managing Partner', image: '/team-members/muneeb-ahmed.jpeg' },
-    { name: 'Owais Siddiqui', role: 'Managing Partner', image: '/team-members/owais-siddiqui.webp' },
+    { name: 'Muneeb Baig', role: 'Managing Partner', image: '/team-members/muneeb-ahmed.jpeg' },
+    { name: 'Owais Ahmed Siddiqui', role: 'Managing Partner', image: '/team-members/owais-siddiqui.webp' },
     { name: 'Kashif Feroz', role: 'Managing Partner', image: '/team-members/owais-siddiqui.webp' },
     { name: 'Muhammad Huzaifa', role: 'Managing Partner IT', image: '/team-members/muhammad-huzaifa.webp' },
 ];
 
 const marketSales = [
-    { name: 'Adnan', category: 'GM Marketing & Sales', image: '/team-members/adnan-cn.png' },
+    { name: 'Adnan Fateh', category: 'GM Marketing & Sales', image: '/team-members/adnan-cn.png' },
     { name: 'Faraz Jafri', category: 'Manager Merchandiser', image: '/team-members/adnan-cn.png' },
-    { name: 'Waqas Jafri', category: 'Manager Operations', image: '/team-members/waqas-cn.png' },
-    { name: 'Osama Ahmed', category: 'Sales Executive', image: '/team-members/usama-cn.png' },
-    { name: 'Tanveer Shah', category: 'Sales Executive', image: '/team-members/tanveer-cn.png' },
-    { name: 'Haris Ahmed', category: 'Sales Executive', image: '/team-members/tanveer-cn.png' },
+    { name: 'S.M. Waqas Jafri', category: 'Manager Operations', image: '/team-members/waqas-cn.png' },
+    { name: 'Osama Farooqui', category: 'Sales Executive', image: '/team-members/usama-cn.png' },
+    { name: 'Tanveer Ahmed', category: 'Sales Executive', image: '/team-members/tanveer-cn.png' },
+    { name: 'Haris Ahmed Siqqique', category: 'Sales Executive', image: '/team-members/tanveer-cn.png' },
     { name: 'Ibrahim Sultan', category: 'Asst. Merchandiser', image: '/team-members/ahadi-cn.png' },
     { name: 'Arham Ahmed Siddiqui', category: 'Asst. Merchandiser', image: '/team-members/arham-cn.png' },
     { name: 'Muhamamd Ali Siddiqui', category: 'Asst. Merchandiser', image: '/team-members/ali-cn.png' },
