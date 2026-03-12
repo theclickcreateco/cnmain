@@ -42,7 +42,8 @@ export default function HeroCarousel() {
             alt={`Hero Image ${currentIndex + 1}`}
             fill
             className="object-cover"
-            priority
+            priority={currentIndex === 0}
+            fetchPriority={currentIndex === 0 ? "high" : "auto"}
             sizes="100vw"
           />
         </motion.div>

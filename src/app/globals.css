@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #0d1b2a;
+  font-family: var(--font-inter), sans-serif;
 
   /* Brand Colors */
   --brand-teal: #0e7b6c;

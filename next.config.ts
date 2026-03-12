@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   // output: 'export', // Removed to enable API routes (Nodemailer)
   trailingSlash: true,
   images: {
-    unoptimized: true,
+    formats: ['image/avif', 'image/webp'],
   },
 };
 

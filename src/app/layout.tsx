@@ -6,6 +6,9 @@ import Footer from "@/components/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
+  display: "swap",
+  preload: true,
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
@@ -24,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased selection:bg-teal/30 selection:text-navy`}>
+      <body className={`${inter.variable} font-sans antialiased selection:bg-teal/30 selection:text-navy`}>
         <InquiryProvider>
           <Header />
           <main className="min-h-screen pt-20">

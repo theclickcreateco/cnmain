@@ -15,9 +15,17 @@ import {
   Calendar,
   User,
 } from "lucide-react";
-import StatsCounter from "@/components/StatsCounter";
-import VideoSection from "@/components/VideoSection";
+import dynamic from "next/dynamic";
 import HeroCarousel from "@/components/HeroCarousel";
+
+const StatsCounter = dynamic(() => import("@/components/StatsCounter"), {
+  ssr: true,
+});
+
+const VideoSection = dynamic(() => import("@/components/VideoSection"), {
+  ssr: true,
+});
+
 import { blogPosts } from "@/lib/blog-data";
 import { categories } from "@/lib/data";
 
