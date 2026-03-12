@@ -215,13 +215,27 @@ export default function Footer() {
         </div>
       </div>
       <div className="mt-12 pt-8 border-t border-gray-800/30 text-center">
-                    <p className="text-[8px] text-gray-500 uppercase tracking-[0.2em] font-medium">
-                        Created By{' '}
-                        <a href="https://cinorium.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">CINORIUM</a>
-                        {' '}|{' '}
-                        <a href="https://cnitsolutions.com/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">CN IT Solutions</a>
-                    </p>
-                </div>
+        <p className="text-[8px] text-gray-500 uppercase tracking-[0.2em] font-medium">
+          Created By{" "}
+          <a
+            href="https://cinorium.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-white transition-colors"
+          >
+            CINORIUM
+          </a>{" "}
+          |{" "}
+          <a
+            href="https://cnitsolutions.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-white transition-colors"
+          >
+            CN IT Solutions
+          </a>
+        </p>
+      </div>
     </footer>
   );
 }
