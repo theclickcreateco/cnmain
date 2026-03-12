@@ -5892,11 +5892,6 @@ export const entities = [
     color: "bg-purple-600",
   },
   {
-    name: "CN Packages",
-    href: "https://cnpackages.com",
-    color: "bg-yellow-600",
-  },
-  {
     name: "CN IT Solutions",
     href: "https://cnitsolutions.com",
     color: "bg-emerald-600",

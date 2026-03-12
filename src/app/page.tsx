@@ -182,7 +182,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid lg:grid-cols-3 gap-8">
           {[
             {
               title: "CN Apparel",
@@ -191,14 +191,6 @@ export default function Home() {
               bg: "bg-blue-500/10",
               border: "border-blue-500/20",
               link: "https://cn-apparels.com",
-            },
-            {
-              title: "CN Packaging",
-              desc: "We deliver innovative, eco-conscious packaging solutions tailored to meet industry-specific needs.",
-              icon: <Box className="w-8 h-8 text-purple-500" />,
-              bg: "bg-purple-500/10",
-              border: "border-purple-500/20",
-              link: "https://cnpackages.com",
             },
             {
               title: "CN IT Solutions",
@@ -233,6 +225,7 @@ export default function Home() {
               {item.link !== "#" && (
                 <Link
                   href={item.link}
+                  aria-label={`Learn more about ${item.title}`}
                   className="flex items-center gap-2 text-navy font-bold text-sm hover:gap-3 transition-all"
                 >
                   Learn More <ArrowRight className="w-4 h-4 text-teal" />
