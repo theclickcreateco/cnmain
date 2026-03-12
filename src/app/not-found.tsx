@@ -36,7 +36,7 @@ export default function NotFound() {
                             <h1 className="text-4xl md:text-5xl font-black text-white leading-tight">
                                 Lost in the <span className="text-teal text-transparent bg-clip-text bg-gradient-to-r from-teal to-emerald-400">Nexux?</span>
                             </h1>
-                            <p className="text-white/50 text-lg leading-relaxed">
+                            <p className="text-white/70 text-lg leading-relaxed">
                                 The page you're looking for has moved or no longer exists. Let's get you back to the right path.
                             </p>
                         </div>
@@ -57,12 +57,12 @@ export default function NotFound() {
                         </div>
 
                         <div className="pt-8 border-t border-white/5">
-                            <p className="text-white/20 text-xs font-bold uppercase tracking-[0.2em] mb-6">Popular Destination</p>
+                            <p className="text-white/60 text-xs font-bold uppercase tracking-[0.2em] mb-6">Popular Destination</p>
                             <div className="grid grid-cols-2 gap-4">
-                                <Link href="/products" className="flex items-center gap-3 text-white/40 hover:text-teal transition-colors text-sm font-bold">
+                                <Link href="/products" className="flex items-center gap-3 text-white/70 hover:text-teal transition-colors text-sm font-bold">
                                     <Package className="w-4 h-4" /> Products
                                 </Link>
-                                <Link href="/about" className="flex items-center gap-3 text-white/40 hover:text-teal transition-colors text-sm font-bold">
+                                <Link href="/about" className="flex items-center gap-3 text-white/70 hover:text-teal transition-colors text-sm font-bold">
                                     <Info className="w-4 h-4" /> About Us
                                 </Link>
                             </div>

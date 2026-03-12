@@ -72,13 +72,13 @@ export default function ProductCard({ product }: ProductCardProps) {
                 <h3 className="text-xl font-bold text-navy mb-2 group-hover:text-teal transition-colors leading-tight">
                     <Link href={`/products/${product.id}`}>{product.name}</Link>
                 </h3>
-                <p className="text-navy/50 text-sm line-clamp-2 leading-relaxed mb-6">
+                <p className="text-navy/70 text-sm line-clamp-2 leading-relaxed mb-6">
                     {product.description}
                 </p>
                 <div className="mt-auto flex items-center justify-between">
                     <Link
                         href={`/products/${product.id}`}
-                        className="inline-flex items-center gap-2 text-sm font-bold text-navy/40 hover:text-teal transition-colors"
+                        className="inline-flex items-center gap-2 text-sm font-bold text-navy/60 hover:text-teal transition-colors"
                     >
                         View Details
                     </Link>

@@ -201,7 +201,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40">
+      <div className="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/60">
         <p>
           © {currentYear} Clothing Nexus Group of Companies. All rights
           reserved.
@@ -219,7 +219,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="mt-12 pt-8 border-t border-gray-800/30 text-center">
-        <p className="text-[8px] text-gray-500 uppercase tracking-[0.2em] font-medium">
+        <p className="text-xs text-gray-400 uppercase tracking-[0.2em] font-medium">
           Created By{" "}
           <a
             href="https://cinorium.vercel.app/"

@@ -48,10 +48,10 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                         </Link>
 
                         <div className="flex flex-wrap items-center gap-4 mb-8">
-                            <span className="bg-teal/20 text-teal border border-teal/20 text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">
+                            <span className="bg-teal/20 text-teal border border-teal/20 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">
                                 {post.category}
                             </span>
-                            <div className="flex items-center gap-6 text-white/40 text-xs font-medium uppercase tracking-wider">
+                            <div className="flex items-center gap-6 text-white/70 text-xs font-medium uppercase tracking-wider">
                                 <span className="flex items-center gap-2 border-l border-white/10 pl-6"><Calendar className="w-4 h-4 text-teal" /> {post.date}</span>
                                 <span className="flex items-center gap-2 border-l border-white/10 pl-6"><Clock className="w-4 h-4 text-teal" /> 5 Min Read</span>
                             </div>
@@ -66,7 +66,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                                 {post.author.charAt(0)}
                             </div>
                             <div>
-                                <div className="text-white/40 text-[10px] font-bold uppercase tracking-widest mb-1">Written by</div>
+                                <div className="text-white/60 text-[10px] font-bold uppercase tracking-widest mb-1">Written by</div>
                                 <div className="text-white font-bold text-lg">{post.author}</div>
                             </div>
                         </div>
@@ -82,7 +82,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                         {/* Sticky Socials (Mobile Hidden) */}
                         <div className="hidden lg:flex flex-col gap-4 absolute -left-20 top-0">
                             {[Facebook, Twitter, Linkedin, Link2].map((Icon, idx) => (
-                                <button key={idx} className="w-10 h-10 rounded-xl bg-navy/5 flex items-center justify-center text-navy/40 hover:bg-teal hover:text-white transition-all shadow-sm">
+                                <button key={idx} className="w-10 h-10 rounded-xl bg-navy/5 flex items-center justify-center text-navy/60 hover:bg-teal hover:text-white transition-all shadow-sm">
                                     <Icon className="w-4 h-4" />
                                 </button>
                             ))}
@@ -95,13 +95,13 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                         {/* Article Footer */}
                         <div className="mt-20 pt-10 border-t border-navy/5 flex flex-col sm:flex-row items-center justify-between gap-8">
                             <div className="flex items-center gap-4">
-                                <span className="text-xs font-bold text-navy/30 uppercase tracking-widest">Global Reach:</span>
+                                <span className="text-xs font-bold text-navy/60 uppercase tracking-widest">Global Reach:</span>
                                 <div className="flex -space-x-2">
                                     {[1, 2, 3].map(i => (
                                         <div key={i} className="w-8 h-8 rounded-full border-2 border-white bg-navy/5" />
                                     ))}
                                 </div>
-                                <span className="text-[10px] font-bold text-navy/50">Joined by 200+ Readers</span>
+                                <span className="text-[10px] font-bold text-navy/70">Joined by 200+ Readers</span>
                             </div>
                             <button className="flex items-center gap-3 bg-teal text-white px-8 py-4 rounded-2xl font-bold hover:shadow-xl hover:shadow-teal/20 transition-all">
                                 <Share2 className="w-5 h-5" /> Share Article

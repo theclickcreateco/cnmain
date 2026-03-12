@@ -58,7 +58,7 @@ export default function AboutPage() {
             <section className="bg-navy text-white pt-32 pb-24 px-4 text-center">
                 <div className="max-w-4xl mx-auto space-y-6">
                     <h1 className="text-4xl md:text-6xl font-bold tracking-tight">Leading the Way in Sustainable Innovation!</h1>
-                    <p className="text-white/60 text-lg md:text-xl leading-relaxed">
+                    <p className="text-white/80 text-lg md:text-xl leading-relaxed">
                         Clothing Nexus is a global leader in sustainable trims and accessories, representing Honyip Metal Products, China. With a focus on eco-friendly and innovative solutions, we specialize in providing metal, plastic, and wooden trims made from both conventional and recycled materials.
                     </p>
                 </div>
@@ -73,7 +73,7 @@ export default function AboutPage() {
                                 <Target className="w-8 h-8" />
                             </div>
                             <h2 className="text-4xl font-bold text-navy">Our Mission</h2>
-                            <p className="text-navy/60 text-lg leading-relaxed">
+                            <p className="text-navy/80 text-lg leading-relaxed">
                                 To deliver sustainable, high-quality trims and accessories that empower the fashion and manufacturing sectors, promoting environmentally responsible practices through innovation and excellence.
                             </p>
                         </div>
@@ -85,7 +85,7 @@ export default function AboutPage() {
                                 <Award className="w-8 h-8" />
                             </div>
                             <h2 className="text-4xl font-bold text-navy">Our Vision</h2>
-                            <p className="text-navy/60 text-lg leading-relaxed">
+                            <p className="text-navy/80 text-lg leading-relaxed">
                                 To be the global benchmark for sustainability and innovation in the trims and accessories industry, inspiring transformative change toward a greener future.
                             </p>
                         </div>
@@ -98,7 +98,7 @@ export default function AboutPage() {
                 <div className="max-w-7xl mx-auto relative z-10">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl font-bold text-white mb-4">Our Group Entities</h2>
-                        <p className="text-white/50">Exploring diverse industries with the same commitment to excellence.</p>
+                        <p className="text-white/80">Exploring diverse industries with the same commitment to excellence.</p>
                     </div>
                     <div className="grid lg:grid-cols-4 gap-8">
                         {entities.map((entity, i) => (
@@ -113,7 +113,7 @@ export default function AboutPage() {
                                     <Globe className="w-6 h-6 text-white" />
                                 </div>
                                 <h3 className="text-xl font-bold text-white mb-2">{entity.name}</h3>
-                                <p className="text-white/40 text-sm mb-6">{entity.href.replace('https://', '')}</p>
+                                <p className="text-white/70 text-sm mb-6">{entity.href.replace('https://', '')}</p>
                                 <span className="text-teal font-bold flex items-center gap-2 group-hover:translate-x-2 transition-transform">
                                     Visit Website <Briefcase className="w-4 h-4" />
                                 </span>
@@ -127,7 +127,7 @@ export default function AboutPage() {
             <section className="max-w-[90rem] mx-auto px-4 py-24 space-y-32">
                 <div className="text-center space-y-4 max-w-2xl mx-auto">
                     <h2 className="text-4xl md:text-5xl font-bold text-navy tracking-tight">Our Dedicated Team</h2>
-                    <p className="text-navy/60 text-lg leading-relaxed">
+                    <p className="text-navy/80 text-lg leading-relaxed">
                         The creative minds and strategic thinkers driving our daily operations and customer success.
                     </p>
                 </div>
@@ -199,7 +199,7 @@ export default function AboutPage() {
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-16 space-y-4">
                         <h2 className="text-3xl font-bold text-navy">Our Core Pillars</h2>
-                        <p className="text-navy/50 max-w-2xl mx-auto">The principles that guide every trim we create and every partnership we foster.</p>
+                        <p className="text-navy/80 max-w-2xl mx-auto">The principles that guide every trim we create and every partnership we foster.</p>
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-8">
@@ -213,7 +213,7 @@ export default function AboutPage() {
                                     {value.icon}
                                 </div>
                                 <h3 className="text-xl font-bold text-navy mb-4">{value.title}</h3>
-                                <p className="text-navy/50 leading-relaxed">{value.desc}</p>
+                                <p className="text-navy/80 leading-relaxed">{value.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -224,7 +224,7 @@ export default function AboutPage() {
             <section className="max-w-7xl mx-auto px-4 py-24 text-center">
                 <div className="space-y-4 mb-16">
                     <h2 className="text-4xl font-bold text-navy">Certified Excellence & Trusted Partnerships</h2>
-                    <p className="text-navy/60 max-w-2xl mx-auto">Clothing Nexus is proud to uphold international standards of sustainability and quality.</p>
+                    <p className="text-navy/80 max-w-2xl mx-auto">Clothing Nexus is proud to uphold international standards of sustainability and quality.</p>
                 </div>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-12 items-center opacity-60">
@@ -248,7 +248,7 @@ export default function AboutPage() {
                     <p className="text-navy/60 leading-relaxed italic border-l-4 border-teal pl-6 text-left">
                         "We test all of our products to meet restricted substance standards in the U.S. Our products are developed to withstand home laundered washes. Our factories have been audited by some of the largest brands in the world."
                     </p>
-                    <p className="text-navy/40 text-sm">
+                    <p className="text-navy/70 text-sm">
                         Nickel-Free · Lead-Free · AZO-Free · Phthalates-Free · ISO 9001:2008
                     </p>
                 </div>

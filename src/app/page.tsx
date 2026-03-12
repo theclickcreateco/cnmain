@@ -98,9 +98,9 @@ export default function Home() {
             <div className="w-16 h-16 bg-white text-white rounded-2xl flex items-center justify-center mb-6 text-3xl">
               🏭
             </div>
-            <h3 className="text-2xl font-bold text-white mb-4">
+            <h2 className="text-2xl font-bold text-white mb-4">
               Innovative Manufacturing
-            </h3>
+            </h2>
             <p className="text-white/60 leading-relaxed">
               Revolutionizing the industry with advanced technology and
               streamlined processes for excellence.
@@ -110,9 +110,9 @@ export default function Home() {
             <div className="w-16 h-16 bg-white text-white rounded-2xl flex items-center justify-center mb-6 text-3xl">
               🌍
             </div>
-            <h3 className="text-2xl font-bold text-white mb-4">
+            <h2 className="text-2xl font-bold text-white mb-4">
               Global Partnerships
-            </h3>
+            </h2>
             <p className="text-white/60 leading-relaxed">
               Building strong relationships worldwide to ensure consistent
               quality and innovation in every product we deliver.
@@ -122,9 +122,9 @@ export default function Home() {
             <div className="w-16 h-16 bg-white text-white rounded-2xl flex items-center justify-center mb-6 text-3xl">
               🌱
             </div>
-            <h3 className="text-2xl font-bold text-white mb-4">
+            <h2 className="text-2xl font-bold text-white mb-4">
               Eco-Driven Solutions
-            </h3>
+            </h2>
             <p className="text-white/60 leading-relaxed">
               Combining creativity and responsibility to design products that
               support a sustainable future.
@@ -176,7 +176,7 @@ export default function Home() {
           <h2 className="text-4xl md:text-5xl font-bold text-navy">
             Expertise in business
           </h2>
-          <p className="text-navy/60 text-lg max-w-2xl mx-auto">
+          <p className="text-navy/80 text-lg max-w-2xl mx-auto">
             Our approach thrives at the intersection between data-driven market
             research and traditional management consultancies.
           </p>
@@ -227,7 +227,7 @@ export default function Home() {
               <h3 className="text-xl font-bold text-navy mb-4">
                 {item.title}
               </h3>
-              <p className="text-navy/60 leading-relaxed mb-8 flex-grow">
+              <p className="text-navy/80 leading-relaxed mb-8 flex-grow">
                 {item.desc}
               </p>
               {item.link !== "#" && (
@@ -245,7 +245,7 @@ export default function Home() {
 
       {/* Trust Bar (Preserved) */}
       <section className="bg-navy/5 py-12">
-        <div className="max-w-7xl mx-auto px-4 flex flex-wrap justify-center items-center gap-12 lg:gap-24 opacity-40 grayscale">
+        <div className="max-w-7xl mx-auto px-4 flex flex-wrap justify-center items-center gap-12 lg:gap-24 opacity-70 grayscale">
           {/* Placeholders for logos mentioned in the search */}
           <span className="text-2xl font-black italic">ASIAN</span>
           <span className="text-2xl font-black italic">EUROPE</span>
@@ -261,7 +261,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-end gap-6 mb-16">
             <div className="space-y-4">
               <h2 className="text-4xl font-bold text-navy">Latest Insights</h2>
-              <p className="text-navy/50 max-w-md">
+              <p className="text-navy/80 max-w-md">
                 Stay updated with the latest trends, industrial news, and
                 manufacturing excellence.
               </p>
@@ -292,7 +292,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="p-8 flex flex-col flex-1 gap-4">
-                  <div className="flex items-center gap-4 text-[10px] font-bold text-navy/30 uppercase tracking-widest">
+                  <div className="flex items-center gap-4 text-[10px] font-bold text-navy/60 uppercase tracking-widest">
                     <span className="flex items-center gap-1">
                       <Calendar className="w-3 h-3" /> {post.date}
                     </span>
@@ -353,7 +353,7 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-navy mb-3 group-hover:text-teal transition-colors">
                   {cat.name}
                 </h3>
-                <p className="text-navy/50 text-base leading-relaxed mb-8 flex-grow">
+                <p className="text-navy/80 text-base leading-relaxed mb-8 flex-grow">
                   {cat.description}
                 </p>
                 <div className="flex items-center gap-3 text-teal font-bold text-sm">

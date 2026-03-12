@@ -60,14 +60,14 @@ export default function InquiryFooter() {
                         </div>
                         <div>
                             <h4 className="text-white font-bold">Inquiry Basket</h4>
-                            <p className="text-white/40 text-xs">Request a quote for all items</p>
+                            <p className="text-white/60 text-xs">Request a quote for all items</p>
                         </div>
                     </div>
 
                     <div className="flex flex-wrap items-center justify-center gap-3 w-full md:w-auto">
                         <button
                             onClick={clearInquiry}
-                            className="px-6 py-4 rounded-2xl text-white/40 font-bold hover:text-white transition-colors text-sm"
+                            className="px-6 py-4 rounded-2xl text-white/60 font-bold hover:text-white transition-colors text-sm"
                         >
                             Clear All
                         </button>
@@ -111,12 +111,12 @@ export default function InquiryFooter() {
                             <div className="space-y-6">
                                 <div>
                                     <h3 className="text-2xl font-bold text-navy mb-2">Complete Your Inquiry</h3>
-                                    <p className="text-navy/50 text-sm">Please provide your details so we can send you a formal quote.</p>
+                                    <p className="text-navy/70 text-sm">Please provide your details so we can send you a formal quote.</p>
                                 </div>
 
                                 <form onSubmit={handleSubmit} className="space-y-4">
                                     <div className="space-y-1">
-                                        <label className="text-[10px] font-bold uppercase tracking-widest text-navy/40 ml-4">Your Name</label>
+                                        <label className="text-[10px] font-bold uppercase tracking-widest text-navy/70 ml-4">Your Name</label>
                                         <input
                                             required
                                             type="text"
@@ -127,7 +127,7 @@ export default function InquiryFooter() {
                                         />
                                     </div>
                                     <div className="space-y-1">
-                                        <label className="text-[10px] font-bold uppercase tracking-widest text-navy/40 ml-4">Email Address</label>
+                                        <label className="text-[10px] font-bold uppercase tracking-widest text-navy/70 ml-4">Email Address</label>
                                         <input
                                             required
                                             type="email"
@@ -138,7 +138,7 @@ export default function InquiryFooter() {
                                         />
                                     </div>
                                     <div className="space-y-1">
-                                        <label className="text-[10px] font-bold uppercase tracking-widest text-navy/40 ml-4">Additional Note (Optional)</label>
+                                        <label className="text-[10px] font-bold uppercase tracking-widest text-navy/70 ml-4">Additional Note (Optional)</label>
                                         <textarea
                                             rows={3}
                                             value={formData.message}

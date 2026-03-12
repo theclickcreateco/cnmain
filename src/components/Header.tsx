@@ -171,7 +171,7 @@ export default function Header() {
             Home
           </Link>
           <div className="flex flex-col gap-2">
-            <span className="text-sm uppercase tracking-wider text-navy/40 font-bold">
+            <span className="text-sm uppercase tracking-wider text-navy/60 font-bold">
               Products
             </span>
             {categories.slice(0, 5).map((cat) => (
@@ -186,7 +186,7 @@ export default function Header() {
             ))}
           </div>
           <div className="flex flex-col gap-2">
-            <span className="text-sm uppercase tracking-wider text-navy/40 font-bold">
+            <span className="text-sm uppercase tracking-wider text-navy/60 font-bold">
               Group of Companies
             </span>
             {entities.map((entity) => (

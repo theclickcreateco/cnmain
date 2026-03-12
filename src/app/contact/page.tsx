@@ -47,7 +47,7 @@ export default function ContactPage() {
                 <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
                     <div className="space-y-8">
                         <h1 className="text-4xl md:text-6xl font-bold tracking-tight">Let's Build the <span className="text-teal">Future</span> Together</h1>
-                        <p className="text-white/60 text-lg md:text-xl leading-relaxed max-w-xl">
+                        <p className="text-white/80 text-lg md:text-xl leading-relaxed max-w-xl">
                             Partner with a leading global manufacturer for your premium garment accessory needs. Our team is ready to bring your designs to life.
                         </p>
 
@@ -57,7 +57,7 @@ export default function ContactPage() {
                                     <Globe className="w-5 h-5" />
                                 </div>
                                 <div>
-                                    <div className="text-xs font-bold text-white/30 uppercase tracking-widest">USA HQ</div>
+                                    <div className="text-xs font-bold text-white/60 uppercase tracking-widest">USA HQ</div>
                                     <div className="text-base font-bold">6200 Savoy Drive, Suite #495, Houston Texas</div>
                                     <div className="text-teal font-medium">+1 832 628-4560</div>
                                 </div>
@@ -68,7 +68,7 @@ export default function ContactPage() {
                                     <MapPin className="w-5 h-5" />
                                 </div>
                                 <div>
-                                    <div className="text-xs font-bold text-white/30 uppercase tracking-widest">China Factory</div>
+                                    <div className="text-xs font-bold text-white/60 uppercase tracking-widest">China Factory</div>
                                     <div className="text-base font-bold">Road 10 Jinqing, Xiaojin Kou Town, Huizhou City, Guangdong</div>
                                 </div>
                             </div>
@@ -78,7 +78,7 @@ export default function ContactPage() {
                                     <Phone className="w-5 h-5" />
                                 </div>
                                 <div>
-                                    <div className="text-xs font-bold text-white/30 uppercase tracking-widest">Pakistan Office</div>
+                                    <div className="text-xs font-bold text-white/60 uppercase tracking-widest">Pakistan Office</div>
                                     <div className="text-base font-bold">Suite# 12 Rafi Mansion, Shahrah-e-Faisal, Karachi</div>
                                     <div className="text-teal font-medium">+92-213-4585575</div>
                                 </div>
@@ -89,7 +89,7 @@ export default function ContactPage() {
                                     <Mail className="w-5 h-5" />
                                 </div>
                                 <div>
-                                    <div className="text-xs font-bold text-white/30 uppercase tracking-widest">Direct Email</div>
+                                    <div className="text-xs font-bold text-white/60 uppercase tracking-widest">Direct Email</div>
                                     <div className="text-lg font-bold">info@clothingnexus.com</div>
                                 </div>
                             </div>
@@ -117,7 +117,7 @@ export default function ContactPage() {
                             <form onSubmit={handleSubmit} className="space-y-6">
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div className="space-y-2">
-                                        <label className="text-[10px] font-bold uppercase tracking-widest text-navy/40">Full Name</label>
+                                        <label className="text-[10px] font-bold uppercase tracking-widest text-navy/70">Full Name</label>
                                         <input
                                             required
                                             type="text"
@@ -128,7 +128,7 @@ export default function ContactPage() {
                                         />
                                     </div>
                                     <div className="space-y-2">
-                                        <label className="text-[10px] font-bold uppercase tracking-widest text-navy/40">Email Address</label>
+                                        <label className="text-[10px] font-bold uppercase tracking-widest text-navy/70">Email Address</label>
                                         <input
                                             required
                                             type="email"
@@ -140,7 +140,7 @@ export default function ContactPage() {
                                     </div>
                                 </div>
                                 <div className="space-y-2">
-                                    <label className="text-[10px] font-bold uppercase tracking-widest text-navy/40">Subject</label>
+                                    <label className="text-[10px] font-bold uppercase tracking-widest text-navy/70">Subject</label>
                                     <select
                                         value={formData.subject}
                                         onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
@@ -153,7 +153,7 @@ export default function ContactPage() {
                                     </select>
                                 </div>
                                 <div className="space-y-2">
-                                    <label className="text-[10px] font-bold uppercase tracking-widest text-navy/40">Message</label>
+                                    <label className="text-[10px] font-bold uppercase tracking-widest text-navy/70">Message</label>
                                     <textarea
                                         required
                                         rows={4}
@@ -195,7 +195,7 @@ export default function ContactPage() {
                             <Clock className="w-6 h-6" />
                         </div>
                         <h3 className="text-xl font-bold text-navy">Business Hours</h3>
-                        <p className="text-navy/50 text-sm leading-relaxed">
+                        <p className="text-navy/80 text-sm leading-relaxed">
                             Monday — Friday: 9:00 AM - 6:00 PM<br />
                             Saturday: 10:00 AM - 2:00 PM<br />
                             Sunday: Closed
@@ -207,7 +207,7 @@ export default function ContactPage() {
                             <Globe className="w-6 h-6" />
                         </div>
                         <h3 className="text-xl font-bold text-navy">Global Network</h3>
-                        <p className="text-navy/50 text-sm leading-relaxed">
+                        <p className="text-navy/80 text-sm leading-relaxed">
                             Serving clients across Asia, North America, Europe, Middle East, and Southeast Asia from our hub in Guangdong.
                         </p>
                     </div>
@@ -217,7 +217,7 @@ export default function ContactPage() {
                             <MapPin className="w-6 h-6" />
                         </div>
                         <h3 className="text-xl font-bold text-navy">Visit Our Factory</h3>
-                        <p className="text-navy/50 text-sm leading-relaxed">
+                        <p className="text-navy/80 text-sm leading-relaxed">
                             Schedule a facility tour to witness our production process and R&D capabilities firsthand.
                         </p>
                     </div>

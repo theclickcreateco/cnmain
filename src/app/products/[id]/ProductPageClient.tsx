@@ -103,7 +103,7 @@ export default function ProductDetail() {
                 <div className="max-w-7xl mx-auto px-4 py-8">
                     <button
                         onClick={() => router.push('/products')}
-                        className="flex items-center gap-2 text-navy/40 hover:text-teal font-bold mb-6 transition-colors uppercase tracking-widest text-[10px]"
+                        className="flex items-center gap-2 text-navy/60 hover:text-teal font-bold mb-6 transition-colors uppercase tracking-widest text-[10px]"
                     >
                         <ChevronLeft className="w-3 h-3" /> Back to Catalog
                     </button>
@@ -115,7 +115,7 @@ export default function ProductDetail() {
                                     {product.parentCategory}
                                 </span>
                                 <span className="text-navy/20">•</span>
-                                <span className="text-navy/40 text-[10px] font-bold uppercase tracking-widest">
+                                <span className="text-navy/60 text-[10px] font-bold uppercase tracking-widest">
                                     {product.category}
                                 </span>
                             </div>
@@ -124,15 +124,15 @@ export default function ProductDetail() {
 
                         {/* Social Sharing */}
                         <div className="flex flex-col gap-3">
-                            <span className="text-[10px] font-bold text-navy/30 uppercase tracking-widest">Like this product? Share with friends:</span>
+                            <span className="text-[10px] font-bold text-navy/60 uppercase tracking-widest">Like this product? Share with friends:</span>
                             <div className="flex gap-2">
-                                <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}`} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-navy/5 flex items-center justify-center text-navy/40 hover:bg-navy hover:text-white transition-all">
+                                <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}`} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-navy/5 flex items-center justify-center text-navy/60 hover:bg-navy hover:text-white transition-all">
                                     <Facebook className="w-4 h-4" />
                                 </a>
-                                <a href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(pageUrl)}&text=${encodeURIComponent(shareText)}`} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-navy/5 flex items-center justify-center text-navy/40 hover:bg-navy hover:text-white transition-all">
+                                <a href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(pageUrl)}&text=${encodeURIComponent(shareText)}`} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-navy/5 flex items-center justify-center text-navy/60 hover:bg-navy hover:text-white transition-all">
                                     <Twitter className="w-4 h-4" />
                                 </a>
-                                <a href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(pageUrl)}`} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-navy/5 flex items-center justify-center text-navy/40 hover:bg-navy hover:text-white transition-all">
+                                <a href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(pageUrl)}`} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-navy/5 flex items-center justify-center text-navy/60 hover:bg-navy hover:text-white transition-all">
                                     <Linkedin className="w-4 h-4" />
                                 </a>
                             </div>
@@ -177,7 +177,7 @@ export default function ProductDetail() {
                                     </div>
                                     <h4 className="font-bold text-sm uppercase tracking-wider">Quality Management</h4>
                                 </div>
-                                <p className="text-navy/40 text-xs leading-relaxed">
+                                <p className="text-navy/70 text-xs leading-relaxed">
                                     Since 2007, we've passed OEKO-Tex Standard 100 Class and ISO9001:2008 Quality Management System, ensuring international standards.
                                 </p>
                             </div>
@@ -194,7 +194,7 @@ export default function ProductDetail() {
                                         <Package className="w-5 h-5 text-teal" />
                                         Product Overview
                                     </h3>
-                                    <p className="text-navy/50 text-lg leading-relaxed">
+                                    <p className="text-navy/80 text-lg leading-relaxed">
                                         {product.description}
                                     </p>
                                 </div>
@@ -266,7 +266,7 @@ export default function ProductDetail() {
                                             <MessageCircle className="w-5 h-5 text-green-500" />
                                         </div>
                                         <div>
-                                            <p className="text-[10px] font-bold text-navy/30 uppercase tracking-widest">WhatsApp Inquiry</p>
+                                            <p className="text-[10px] font-bold text-navy/60 uppercase tracking-widest">WhatsApp Inquiry</p>
                                             <a href={`https://wa.me/${phone.replace('+', '')}`} className="text-sm font-bold text-navy hover:text-teal transition-colors">{phone}</a>
                                         </div>
                                     </div>
@@ -292,7 +292,7 @@ export default function ProductDetail() {
                         <div className="flex items-center justify-between">
                             <div className="space-y-2">
                                 <h2 className="text-3xl font-bold text-navy tracking-tight">Related Products</h2>
-                                <p className="text-navy/40 text-sm italic">You might also be interested in these {product.category} items</p>
+                                <p className="text-navy/60 text-sm italic">You might also be interested in these {product.category} items</p>
                             </div>
                             <Link href="/products" className="text-sm font-bold text-teal hover:text-navy transition-colors flex items-center gap-2">
                                 View Entire Catalog <ChevronLeft className="w-4 h-4 rotate-180" />
@@ -328,12 +328,12 @@ export default function ProductDetail() {
                             <div className="space-y-6">
                                 <div>
                                     <h3 className="text-2xl font-bold text-navy mb-2">Inquiry for {product.name}</h3>
-                                    <p className="text-navy/50 text-sm">Please provide your details below.</p>
+                                    <p className="text-navy/70 text-sm">Please provide your details below.</p>
                                 </div>
 
                                 <form onSubmit={handleDirectSubmit} className="space-y-4">
                                     <div className="space-y-1">
-                                        <label className="text-[10px] font-bold uppercase tracking-widest text-navy/40 ml-4">Your Name</label>
+                                        <label className="text-[10px] font-bold uppercase tracking-widest text-navy/60 ml-4">Your Name</label>
                                         <input
                                             required
                                             type="text"
@@ -344,7 +344,7 @@ export default function ProductDetail() {
                                         />
                                     </div>
                                     <div className="space-y-1">
-                                        <label className="text-[10px] font-bold uppercase tracking-widest text-navy/40 ml-4">Email Address</label>
+                                        <label className="text-[10px] font-bold uppercase tracking-widest text-navy/60 ml-4">Email Address</label>
                                         <input
                                             required
                                             type="email"
@@ -355,7 +355,7 @@ export default function ProductDetail() {
                                         />
                                     </div>
                                     <div className="space-y-1">
-                                        <label className="text-[10px] font-bold uppercase tracking-widest text-navy/40 ml-4">Message</label>
+                                        <label className="text-[10px] font-bold uppercase tracking-widest text-navy/60 ml-4">Message</label>
                                         <textarea
                                             required
                                             rows={4}
