@@ -48,6 +48,7 @@ export default function ProductCard({ product }: ProductCardProps) {
                         href={`/products/${product.id}`}
                         className="w-10 h-10 bg-white text-navy rounded-full flex items-center justify-center shadow-lg hover:bg-teal hover:text-white transition-all"
                         title="View Details"
+                        aria-label="View product details"
                     >
                         <ArrowUpRight className="w-5 h-5" />
                     </Link>
@@ -60,6 +61,7 @@ export default function ProductCard({ product }: ProductCardProps) {
                                 : "bg-white text-navy hover:bg-teal hover:text-white"
                         )}
                         title={isSelected ? "Remove from Inquiry" : "Add to Inquiry"}
+                        aria-label={isSelected ? "Remove from Inquiry" : "Add to Inquiry"}
                     >
                         {isSelected ? <Check className="w-5 h-5" /> : <Plus className="w-5 h-5" />}
                     </button>

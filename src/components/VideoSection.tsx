@@ -59,6 +59,7 @@ export default function VideoSection() {
                     <button
                         onClick={(e) => { e.stopPropagation(); setIsOpen(false); }}
                         className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors"
+                        aria-label="Close video"
                     >
                         <X className="w-10 h-10" />
                     </button>

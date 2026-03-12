@@ -56,24 +56,28 @@ export default function Footer() {
             <Link
               href="#"
               className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-teal hover:text-navy transition-all"
+              aria-label="Follow us on Facebook"
             >
               <Facebook className="w-4 h-4" />
             </Link>
             <Link
               href="#"
               className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-teal hover:text-navy transition-all"
+              aria-label="Follow us on Twitter"
             >
               <Twitter className="w-4 h-4" />
             </Link>
             <Link
               href="#"
               className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-teal hover:text-navy transition-all"
+              aria-label="Follow us on Instagram"
             >
               <Instagram className="w-4 h-4" />
             </Link>
             <Link
               href="#"
               className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-teal hover:text-navy transition-all"
+              aria-label="Follow us on LinkedIn"
             >
               <Linkedin className="w-4 h-4" />
             </Link>

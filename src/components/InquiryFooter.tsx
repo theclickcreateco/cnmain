@@ -96,6 +96,7 @@ export default function InquiryFooter() {
                         <button
                             onClick={() => setIsModalOpen(false)}
                             className="absolute top-8 right-8 text-navy/20 hover:text-navy transition-colors"
+                            aria-label="Close inquiry modal"
                         >
                             <X className="w-6 h-6" />
                         </button>
