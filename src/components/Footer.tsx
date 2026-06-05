@@ -26,11 +26,10 @@ export default function Footer() {
         <div className="space-y-6">
           <Link href="/" className="flex items-center gap-3 group">
             {logoExists ? (
-              <div className="relative h-12 w-50 flex items-center">
+              <div className="relative h-14 w-48 flex items-center">
                 <Image
-                  src="/logo.png"
+                  src="/logo_cn-main-logo_vetical.svg"
                   alt="Clothing Nexus Logo"
-                  // width=[200]
                   fill
                   priority
                   className="object-contain group-hover:scale-105 transition-transform duration-300 filter brightness-0 invert"
@@ -109,6 +108,11 @@ export default function Footer() {
             <li>
               <Link href="/blog" className="hover:text-teal transition-colors">
                 Blog
+              </Link>
+            </li>
+            <li>
+              <Link href="/events" className="hover:text-teal transition-colors">
+                Events
               </Link>
             </li>
             <li>
@@ -222,7 +226,7 @@ export default function Footer() {
         <p className="text-xs text-gray-400 uppercase tracking-[0.2em] font-medium">
           Created By{" "}
           <a
-            href="https://cinorium.vercel.app/"
+            href="https://cinorium.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white transition-colors"

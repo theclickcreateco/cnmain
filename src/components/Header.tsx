@@ -39,11 +39,10 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
           {logoExists ? (
-            <div className="relative h-12 w-50 flex items-center">
+            <div className="relative h-14 w-48 flex items-center">
               <Image
-                src="/logo.png"
+                src="/logo_cn-main-logo_vetical.svg"
                 alt="Clothing Nexus Logo"
-                // width=[200]
                 fill
                 priority
                 className="object-contain group-hover:scale-105 transition-transform duration-300"
@@ -119,6 +118,12 @@ export default function Header() {
             className="text-sm font-medium text-navy/80 hover:text-teal transition-colors"
           >
             Blog
+          </Link>
+          <Link
+            href="/events"
+            className="text-sm font-medium text-navy/80 hover:text-teal transition-colors"
+          >
+            Events
           </Link>
           <Link
             href="/contact"
@@ -215,6 +220,13 @@ export default function Header() {
             className="text-lg font-medium text-navy"
           >
             Blog
+          </Link>
+          <Link
+            href="/events"
+            onClick={() => setIsOpen(false)}
+            className="text-lg font-medium text-navy"
+          >
+            Events
           </Link>
           <Link
             href="/contact"
