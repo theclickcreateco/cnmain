@@ -1,10 +1,9 @@
-import fs from 'fs';
-import path from 'path';
 import { events } from '@/lib/events';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { ChevronLeft, Calendar, Award, MapPin } from 'lucide-react';
 import EventGallery from './EventGallery';
+import eventImages from '@/lib/event-images.json';
 
 interface PageProps {
     params: Promise<{ slug: string }>;
@@ -24,25 +23,8 @@ export default async function EventDetailPage({ params }: PageProps) {
         notFound();
     }
 
-    // Read images from the booth directory
-    let images: string[] = [];
-    try {
-        const boothDirName = event.booth; // e.g. "Booth 31"
-        const dirPath = path.join(process.cwd(), 'public', 'uploads', 'events', boothDirName);
-        
-        if (fs.existsSync(dirPath)) {
-            const files = fs.readdirSync(dirPath);
-            images = files
-                .filter(file => {
-                    const ext = path.extname(file).toLowerCase();
-                    return ['.jpg', '.jpeg', '.png', '.webp', '.gif'].includes(ext);
-                })
-                // Encode directory and filename for URL safety
-                .map(file => `/uploads/events/${encodeURIComponent(boothDirName)}/${encodeURIComponent(file)}`);
-        }
-    } catch (error) {
-        console.error('Error reading event images:', error);
-    }
+    // Load images from the pre-generated static JSON mapping
+    const images: string[] = (eventImages as Record<string, string[]>)[event.booth] || [];
 
     return (
         <div className="min-h-screen bg-slate-50/50 pb-32">
